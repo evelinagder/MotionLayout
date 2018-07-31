@@ -1,10 +1,10 @@
 package com.example.evelinaderventska.motionlayout
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.constraint.motion.MotionLayout
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.SeekBar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.ceil
 
@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
 
     fun start(v: View) {
         motionLayoutView.transitionToEnd()
+    }
+
+    fun next(v: View) {
+
+        val intent = Intent(this, DragSaturationExampleActivity::class.java)
+        startActivity(intent)
     }
 
 
