@@ -9,6 +9,6 @@ class DragSaturationExampleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.drag_animation_key_frame)
+        setContentView(R.layout.second_activity)
     }
 }

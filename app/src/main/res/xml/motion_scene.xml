@@ -11,27 +11,27 @@
         motion:constraintSetStart="@+id/starting_set"
         motion:duration="2000">
 
-        <!--<KeyFrameSet>-->
-            <!--&lt;!&ndash;<KeyPosition&ndash;&gt;-->
-            <!--&lt;!&ndash;motion:target="@+id/actor"&ndash;&gt;-->
-            <!--&lt;!&ndash;motion:framePosition="30"&ndash;&gt;-->
-            <!--&lt;!&ndash;motion:type="deltaRelative"&ndash;&gt;-->
-            <!--&lt;!&ndash;motion:percentX="0.85" />&ndash;&gt;-->
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="30"
+                motion:percentX="0.85"
+                motion:target="@+id/actor"
+                motion:type="deltaRelative" />
 
-            <!--<KeyPosition-->
-                <!--motion:framePosition="50"-->
-                <!--motion:percentY="0.25"-->
-                <!--motion:target="@+id/actor"-->
-                <!--motion:type="parentRelative" />-->
+            <KeyPosition
+                motion:framePosition="50"
+                motion:percentY="0.25"
+                motion:target="@+id/actor"
+                motion:type="parentRelative" />
 
-            <!--<KeyAttribute-->
-                <!--android:rotation="-45"-->
-                <!--android:scaleX="2"-->
-                <!--android:scaleY="2"-->
-                <!--motion:framePosition="50"-->
-                <!--motion:target="@id/actor" />-->
+            <KeyAttribute
+                android:rotation="-45"
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50"
+                motion:target="@id/actor" />
 
-        <!--</KeyFrameSet>-->
+        </KeyFrameSet>
 
     </Transition>
 
@@ -42,9 +42,9 @@
             android:layout_height="60dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintRight_toRightOf="parent">
-            <!--<CustomAttribute-->
-                <!--motion:attributeName="backgroundColor"-->
-                <!--motion:customColorValue="#43118e" />-->
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#43118e" />
 
         </Constraint>
 
@@ -58,9 +58,9 @@
             motion:layout_constraintLeft_toLeftOf="parent"
             motion:layout_constraintTop_toTopOf="parent">
 
-            <!--<CustomAttribute-->
-                <!--motion:attributeName="backgroundColor"-->
-                <!--motion:customColorValue="#da8dd3" />-->
+            <CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="#da8dd3" />
         </Constraint>
     </ConstraintSet>
 
